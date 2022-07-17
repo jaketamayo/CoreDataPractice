@@ -12,6 +12,7 @@
 		CF4186C92884BC1B002503D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4186C82884BC1B002503D7 /* Assets.xcassets */; };
 		CF4186CC2884BC1B002503D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4186CB2884BC1B002503D7 /* Preview Assets.xcassets */; };
 		CF4186D42884BC9C002503D7 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF4186D22884BC9C002503D7 /* DataModel.xcdatamodeld */; };
+		CF4186D72884BFEF002503D7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4186D62884BFEF002503D7 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		CF4186C82884BC1B002503D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF4186CB2884BC1B002503D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF4186D32884BC9C002503D7 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		CF4186D62884BFEF002503D7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		CF4186C32884BC1A002503D7 /* CoreDataPractice */ = {
 			isa = PBXGroup;
 			children = (
+				CF4186D52884BFB6002503D7 /* Managers */,
 				CF4186C42884BC1A002503D7 /* CoreDataPracticeApp.swift */,
 				CF4186C62884BC1A002503D7 /* ContentView.swift */,
 				CF4186D22884BC9C002503D7 /* DataModel.xcdatamodeld */,
@@ -68,6 +71,14 @@
 				CF4186CB2884BC1B002503D7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF4186D52884BFB6002503D7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CF4186D62884BFEF002503D7 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 			files = (
 				CF4186D42884BC9C002503D7 /* DataModel.xcdatamodeld in Sources */,
 				CF4186C72884BC1A002503D7 /* ContentView.swift in Sources */,
+				CF4186D72884BFEF002503D7 /* CoreDataManager.swift in Sources */,
 				CF4186C52884BC1A002503D7 /* CoreDataPracticeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
