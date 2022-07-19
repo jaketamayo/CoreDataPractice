@@ -24,6 +24,18 @@ class CoreDataManager {
     }
   }
   
+  // MARK: Fetch Request
+  // This function will allow you to view the movie entered after hitting the 'save' button
+  func getMovies() -> [Movie] {
+    let fetchRequest: NSFetchRequest<Movie> = Movie.fetchRequest()
+    
+    do {
+       return try persistentContainer.viewContext.fetch(fetchRequest)
+    } catch {
+      return []
+    }
+  }
+  
   // MARK: Save for Core Data
   //Create a method to save the movies
   func saveMovie(title: String) {

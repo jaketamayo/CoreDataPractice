@@ -10,10 +10,18 @@ import SwiftUI
 struct ContentView: View {
   
   let coreDataManager: CoreDataManager
+  @State private var addMovie = ""
   
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+      VStack {
+        TextField("Enter movie name", text: $addMovie)
+          .textFieldStyle(.roundedBorder).padding()
+        
+        // Add save button for movies that are added
+        Button("Save") {
+          coreDataManager.saveMovie(title: addMovie)
+        }
+      }
     }
 }
 
