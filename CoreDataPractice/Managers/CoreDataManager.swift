@@ -23,4 +23,19 @@ class CoreDataManager {
       }
     }
   }
+  
+  // MARK: Save for Core Data
+  //Create a method to save the movies
+  func saveMovie(title: String) {
+    // 1. Create an instance of the Movie entity
+    let movie = Movie(context: persistentContainer.viewContext)
+    movie.title = title
+    
+    // 2. Persist the data
+    do {
+      try persistentContainer.viewContext.save()
+    } catch {
+      print("Failed to save movie \(error)")
+    }
+  }
 }
